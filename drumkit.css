@@ -1,0 +1,74 @@
+* {
+    margin: 0 ;
+    box-sizing: border-box ;
+    font-family: sans-serif;
+}
+
+html {
+    width: 100vw ;
+    height: 100vh ; 
+}
+body {
+    width: 100% ;
+    height: 100% ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    background-image: url(background.jpg) ;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+main {
+    width: 90vw;
+    margin: 0 auto ;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.key {
+    width: 9vw;
+    padding: 2vh 0;
+    border: 3px solid black ;
+    border-radius: .5rem;
+    text-align: center;
+    transition: all 0.07s;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.15);  
+    backdrop-filter: blur(10px);
+}
+
+.key kbd {
+    margin-bottom: 1vh;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.key p {
+    font-size: 15px;
+    color: #ffc600;
+    text-transform: uppercase;
+
+}
+.playing {
+    /* animation: key 0.2s; */
+    /* border: 3px solid #ffc600 ; */
+    /* Only write the properties which change */
+    border-color: #ffc600;
+    box-shadow: 0 0 10px #ffc600;
+    transform: scale(1.1);
+}
+/* @keyframes key {
+    50%{
+        border: 3px solid #ffc600 ;
+        box-shadow: 0 0 10px #ffc600;
+        transform: scale(1.1);
+    }
+    100% {
+        border: 3px solid #000000 ;
+        box-shadow: 0 0 0;
+        transform: scale(1);
+    }
+} */
